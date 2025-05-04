@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace sibber.Common.Native.Windows;
+namespace Sibber.Common.Native.Windows;
 
 /// <summary>The <a href="https://learn.microsoft.com/windows/win32/api/windef/ns-windef-point">POINT</a> structure defines the <i>x</i>- and <i>y</i>-coordinates of a point.</summary>
 /// <remarks>

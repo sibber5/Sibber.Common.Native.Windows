@@ -12,14 +12,14 @@
     <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
 
-    <PackageId>sibber.Common.Native.Windows</PackageId>
-    <Version>1.0.0</Version>
+    <PackageId>Sibber.Common.Native.Windows</PackageId>
+    <Version>2.0.0</Version>
     <Authors>sibber</Authors>
     <Description>Small library that provides common windows native APIs and types that are used by my other windows API libraries.</Description>
-    <Copyright>Copyright (c) 2025 sibber5</Copyright>
+    <Copyright>Copyright (c) 2025 sibber (GitHub: sibber5)</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/sibber5/sibber.Common.Native.Windows</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/sibber5/sibber.Common.Native.Windows</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/sibber5/Sibber.Common.Native.Windows</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/sibber5/Sibber.Common.Native.Windows</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 

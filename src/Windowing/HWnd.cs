@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Globalization;
 
-namespace sibber.Common.Native.Windows.Windowing;
+namespace Sibber.Common.Native.Windows.Windowing;
 
 [DebuggerDisplay("{Value}")]
 public readonly struct HWnd(nint value) : IEquatable<HWnd>, IFormattable

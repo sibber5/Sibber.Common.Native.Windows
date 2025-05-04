@@ -1,4 +1,4 @@
-﻿namespace sibber.Common.Native.Windows;
+﻿namespace Sibber.Common.Native.Windows;
 
 #pragma warning disable CA1707 // Identifiers should not contain underscores
 

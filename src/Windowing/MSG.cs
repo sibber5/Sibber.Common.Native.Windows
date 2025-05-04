@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace sibber.Common.Native.Windows.Windowing;
+namespace Sibber.Common.Native.Windows.Windowing;
 
 [StructLayout(LayoutKind.Sequential)]
 public readonly struct MSG(HWnd hWnd, uint messageId, nuint wParam, nint lParam, uint time, Point pt) : IEquatable<MSG>

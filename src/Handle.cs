@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Globalization;
 
-namespace sibber.Common.Native.Windows;
+namespace Sibber.Common.Native.Windows;
 
 [DebuggerDisplay("{Value}")]
 public readonly struct Handle(nint value) : IEquatable<Handle>, IFormattable

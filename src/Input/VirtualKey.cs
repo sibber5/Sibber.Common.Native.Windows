@@ -1,7 +1,32 @@
 ﻿using System.Runtime.Versioning;
 
-namespace sibber.Common.Native.Windows.Input;
+namespace Sibber.Common.Native.Windows.Input;
 
+/// <remarks>
+/// <code>
+/// +-----------------------+--------------+
+/// | 0x07, 0x0A-0x0B       | Reserved     |
+/// +-----------------------+--------------+
+/// | 0x0E - 0x0F           | Unassigned   |
+/// +-----------------------+--------------+
+/// | 0x3A - 0x40           | Undefined    |
+/// +-----------------------+--------------+
+/// | 0x5E, 0x88-0x8F       | Reserved     |
+/// +-----------------------+--------------+
+/// | 0x92 - 0x96           | OEM specific |
+/// +-----------------------+--------------+
+/// | 0x97 - 0x9F           | Unassigned   |
+/// +-----------------------+--------------+
+/// | 0xE0                  | Reserved     |
+/// +-----------------------+--------------+
+/// | 0xE1, 0xE3-0xE4, 0xE6 | OEM specific |
+/// +-----------------------+--------------+
+/// | 0xE8                  | Unassigned   |
+/// +-----------------------+--------------+
+/// | 0xE9-0xF5             | OEM specific |
+/// +-----------------------+--------------+
+/// </code>
+/// </remarks>
 public enum VirtualKey : ushort
 {
     /// <summary>

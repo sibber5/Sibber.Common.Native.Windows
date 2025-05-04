@@ -1,4 +1,4 @@
-﻿namespace sibber.Common.Native.Windows;
+﻿namespace Sibber.Common.Native.Windows;
 
 // Copyright © .NET Foundation and Contributors. All rights reserved.
 // Licensed under the MIT license. SPDX-License-Identifier: MIT.

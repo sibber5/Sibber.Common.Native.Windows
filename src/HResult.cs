@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Runtime.InteropServices;
 
-namespace sibber.Common.Native.Windows;
+namespace Sibber.Common.Native.Windows;
 
 #pragma warning disable CA1823 // Avoid unused private fields
 
@@ -64,17 +64,17 @@ public readonly partial struct HResult(uint value) : IEquatable<HResult>, IForma
     /// <summary>
     /// Gets the facility code of the HRESULT.
     /// </summary>
-    public FacilityCode Facility => (FacilityCode)((Value & FacilityMask) >> FacilityShift);
+    public readonly FacilityCode Facility => (FacilityCode)((Value & FacilityMask) >> FacilityShift);
 
     /// <summary>
     /// Gets the severity of the HRESULT.
     /// </summary>
-    public SeverityCode Severity => (SeverityCode)((Value & SeverityMask) >> SeverityShift);
+    public readonly SeverityCode Severity => (SeverityCode)((Value & SeverityMask) >> SeverityShift);
 
     /// <summary>
     /// Gets the facility's status code bits from the HRESULT.
     /// </summary>
-    public uint FacilityStatus => Value & FacilityStatusMask;
+    public readonly uint FacilityStatus => Value & FacilityStatusMask;
 
     /// <summary>
     /// Throws an exception if <see cref="Failed"/> is <see langword="true"/>, based on the failure value.

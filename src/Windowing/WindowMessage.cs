@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Runtime.Versioning;
 
-namespace sibber.Common.Native.Windows.Windowing;
+namespace Sibber.Common.Native.Windows.Windowing;
 
 #pragma warning disable CA1041 // Provide ObsoleteAttribute message
 #pragma warning disable CA1720 // Identifier contains type name
 
+// TODO: add docs
 /// <summary>
 /// Window Messages
 /// </summary>
 /// <remarks>
 /// Generated from WinUser.h from Windows SDK 10.0.26100.0.<br/>
 /// <br/>
-/// All Message Numbers below 0x0400 are RESERVED.
+/// All Message Numbers below <c>0x0400</c> are RESERVED.
 /// </remarks>
 public enum WindowMessage : uint
 {
@@ -81,6 +82,8 @@ public enum WindowMessage : uint
     ChildActivate = 0x0022,
 
     QueueSync = 0x0023,
+
+    GetMinMaxInfo = 0x0024,
 
     PaintIcon = 0x0026,
 
@@ -664,5 +667,20 @@ public enum WindowMessage : uint
 
     PenWinLast = 0x038F,
 
+    /// <summary>
+    /// <para>Used to define private messages for use by private window classes, usually of the form <see cref="User"/>+x, where x is an integer value.</para>
+    /// <para>See <see href="https://learn.microsoft.com/en-us/windows/win32/winmsg/wm-user">documentation on learn.microsoft.com</see> for more information.</para>
+    /// </summary>
+    User = 0x0400,
+
+    /// <summary>
+    /// <para>Used to define private messages, usually of the form <see cref="App"/>+x, where x is an integer value.</para>
+    /// <para>See <see href="https://learn.microsoft.com/en-us/windows/win32/winmsg/wm-app">documentation on learn.microsoft.com</see> for more information.</para>
+    /// </summary>
     App = 0x8000,
+
+    /// <summary>
+    /// [UNDOCUMENTED] WM_SYSTIMER is used for internal actions like caret blinking or scrolling.
+    /// </summary>
+    SysTimer = 0x118,
 }
