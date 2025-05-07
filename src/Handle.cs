@@ -5,15 +5,15 @@ using System.Globalization;
 namespace Sibber.Common.Native.Windows;
 
 [DebuggerDisplay("{Value}")]
-public readonly struct Handle(nint value) : IEquatable<Handle>, IFormattable
+public readonly struct Handle(IntPtr value) : IEquatable<Handle>, IFormattable
 {
-    public readonly nint Value = value;
+    public readonly IntPtr Value = value;
 
     public static Handle Null => default;
 
-    public static explicit operator Handle(nint value) => new(value);
+    public static explicit operator Handle(IntPtr value) => new(value);
 
-    public static implicit operator nint(Handle value) => value.Value;
+    public static implicit operator IntPtr(Handle value) => value.Value;
 
     public static bool operator ==(Handle left, Handle right) => left.Value == right.Value;
     public static bool operator !=(Handle left, Handle right) => !(left == right);

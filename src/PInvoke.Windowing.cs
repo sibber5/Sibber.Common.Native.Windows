@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
 using Sibber.Common.Native.Windows.Windowing;
 
 namespace Sibber.Common.Native.Windows;
@@ -36,7 +37,7 @@ internal static unsafe partial class PInvoke
 #else
         [DllImport("USER32.dll", EntryPoint = "DispatchMessageW", ExactSpelling = true)]
         [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]
-        public static extern unsafe nint DispatchMessage(MSG* lpMsg);
+        public static extern unsafe IntPtr DispatchMessage(MSG* lpMsg);
 #endif
     }
 }

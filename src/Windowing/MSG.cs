@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 namespace Sibber.Common.Native.Windows.Windowing;
 
 [StructLayout(LayoutKind.Sequential)]
-public readonly struct MSG(HWnd hWnd, uint messageId, nuint wParam, nint lParam, uint time, Point pt) : IEquatable<MSG>
+public readonly struct MSG(HWnd hWnd, uint messageId, UIntPtr wParam, IntPtr lParam, uint time, Point pt) : IEquatable<MSG>
 {
     /// <summary>
     /// <para>Type: <b>HWND</b> A handle to the window whose window procedure receives the message. This member is <b>NULL</b> when the message is a thread message.</para>
@@ -20,12 +20,12 @@ public readonly struct MSG(HWnd hWnd, uint messageId, nuint wParam, nint lParam,
     /// <para>Type: <b>WPARAM</b> Additional information about the message. The exact meaning depends on the value of the <b>message</b> member.</para>
     /// <para><see href="https://docs.microsoft.com/windows/win32/api//winuser/ns-winuser-msg#members">Read more on docs.microsoft.com</see>.</para>
     /// </summary>
-    public readonly nuint WParam = wParam;
+    public readonly UIntPtr WParam = wParam;
     /// <summary>
     /// <para>Type: <b>LPARAM</b> Additional information about the message. The exact meaning depends on the value of the <b>message</b> member.</para>
     /// <para><see href="https://docs.microsoft.com/windows/win32/api//winuser/ns-winuser-msg#members">Read more on docs.microsoft.com</see>.</para>
     /// </summary>
-    public readonly nint LParam = lParam;
+    public readonly IntPtr LParam = lParam;
     /// <summary>
     /// <para>Type: <b>DWORD</b> The time at which the message was posted.</para>
     /// <para><see href="https://docs.microsoft.com/windows/win32/api//winuser/ns-winuser-msg#members">Read more on docs.microsoft.com</see>.</para>

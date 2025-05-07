@@ -5,15 +5,15 @@ using System.Globalization;
 namespace Sibber.Common.Native.Windows.Windowing;
 
 [DebuggerDisplay("{Value}")]
-public readonly struct HWnd(nint value) : IEquatable<HWnd>, IFormattable
+public readonly struct HWnd(IntPtr value) : IEquatable<HWnd>, IFormattable
 {
-    public readonly nint Value = value;
+    public readonly IntPtr Value = value;
 
     public static HWnd Null => default;
 
-    public static explicit operator HWnd(nint value) => new(value);
+    public static explicit operator HWnd(IntPtr value) => new(value);
 
-    public static implicit operator nint(HWnd value) => value.Value;
+    public static implicit operator IntPtr(HWnd value) => value.Value;
 
     public static implicit operator Handle(HWnd value) => new(value.Value);
 
