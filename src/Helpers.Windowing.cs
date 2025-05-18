@@ -10,10 +10,10 @@ public static partial class Helpers
         /// <summary>
         /// Run a message loop.
         /// </summary>
-        /// <param name="throwOnError">Specifies whether the method should throw if there is an error, or return -1.</param>
+        /// <param name="throwOnError">Specifies whether the method should throw if there is an error, or return <c>-1</c>.</param>
         /// <returns>
-        /// 0 if <see cref="WindowMessage.Quit"/> is retrieved.
-        /// -1 if <paramref name="throwOnError"/> is <see langword="false"/> and there was an error during/after message retrieval.
+        /// <c>0</c> if <see cref="WindowMessage.Quit"/> is retrieved.
+        /// <c>-1</c> if <paramref name="throwOnError"/> is <see langword="false"/> and there was an error during/after message retrieval.
         /// </returns>
         /// <exception cref="Win32Exception">
         /// Thrown if <paramref name="throwOnError"/> is <see langword="true"/> and there was an error during/after message retrieval.

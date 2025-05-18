@@ -374,7 +374,7 @@ public enum WindowMessage : uint
     MdiRefreshMenu = 0x0234,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -382,7 +382,7 @@ public enum WindowMessage : uint
     PointerDeviceChange = 0x238,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -390,7 +390,7 @@ public enum WindowMessage : uint
     PointerDeviceInRange = 0x239,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -400,7 +400,7 @@ public enum WindowMessage : uint
     Touch = 0x0240,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -408,7 +408,7 @@ public enum WindowMessage : uint
     NcPointerUpdate = 0x0241,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -416,7 +416,7 @@ public enum WindowMessage : uint
     NcPointerDown = 0x0242,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -424,7 +424,7 @@ public enum WindowMessage : uint
     NcPointerUp = 0x0243,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -432,7 +432,7 @@ public enum WindowMessage : uint
     PointerUpdate = 0x0245,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -440,7 +440,7 @@ public enum WindowMessage : uint
     PointerDown = 0x0246,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -448,7 +448,7 @@ public enum WindowMessage : uint
     PointerUp = 0x0247,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -456,7 +456,7 @@ public enum WindowMessage : uint
     PointerEnter = 0x0249,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -464,7 +464,7 @@ public enum WindowMessage : uint
     PointerLeave = 0x024A,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -472,7 +472,7 @@ public enum WindowMessage : uint
     PointerActivate = 0x024B,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -480,7 +480,7 @@ public enum WindowMessage : uint
     PointerCaptureChanged = 0x024C,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -488,7 +488,7 @@ public enum WindowMessage : uint
     TouchHitTesting = 0x024D,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -496,7 +496,7 @@ public enum WindowMessage : uint
     PointerWheel = 0x024E,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -504,7 +504,7 @@ public enum WindowMessage : uint
     PointerHWheel = 0x024F,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -512,7 +512,7 @@ public enum WindowMessage : uint
     DmPointerHitTest = 0x0250,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -520,7 +520,7 @@ public enum WindowMessage : uint
     PointerRoutedTo = 0x0251,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]
@@ -528,7 +528,7 @@ public enum WindowMessage : uint
     PointerRoutedAway = 0x0252,
 
     /// <remarks>
-    /// Windows 6.2.9200+
+    /// Windows 8+
     /// </remarks>
 #if NET5_0_OR_GREATER
     [SupportedOSPlatform("windows6.2.9200")]

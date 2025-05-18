@@ -34,3 +34,5 @@ dotnet_diagnostic.CA2225.severity = none
 # CA1724: Type names should not match namespaces
 dotnet_diagnostic.CA1724.severity = suggestion
 
+# CA1720: Identifier contains type name
+dotnet_diagnostic.CA1720.severity = suggestion
