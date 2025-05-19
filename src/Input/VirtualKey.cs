@@ -1037,7 +1037,7 @@ public enum VirtualKey : ushort
     // 0xE0 Reserved
     // 0xE1 OEM specific
     /// <summary>
-    /// The '<>' keys on the US standard keyboard, or the '\\|' key on the non-US 102-key keyboard.
+    /// The '&lt;&gt;' keys on the US standard keyboard, or the '\\|' key on the non-US 102-key keyboard.
     /// </summary>
     Oem102 = 226,
     // 0xE3 - 0xE4 OEM specific

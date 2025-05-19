@@ -31,7 +31,9 @@ public readonly struct Point(int x, int y) : IEquatable<Point>
 
     public readonly bool Equals(Point other) => X == other.X && Y == other.Y;
 
+    // ReSharper disable ParameterHidesMember
     public readonly void Deconstruct(out int X, out int Y)
+    // ReSharper restore ParameterHidesMember
     {
         X = this.X;
         Y = this.Y;

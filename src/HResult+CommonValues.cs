@@ -66,22 +66,22 @@ partial struct HResult
     /// <summary>
     /// The operation was canceled by the user. (Error source 7 means Win32.)
     /// </summary>
-    /// <SeeAlso href="https://learn.microsoft.com/windows/win32/debug/system-error-codes--1000-1299-"/>
-    /// <SeeAlso href="https://en.wikipedia.org/wiki/HRESULT"/>
+    /// <seealso href="https://learn.microsoft.com/windows/win32/debug/system-error-codes--1000-1299-"/>
+    /// <seealso href="https://en.wikipedia.org/wiki/HRESULT"/>
     public static HResult E_CANCELLED => new(0x800704C7u);
 
     /// <summary>
     /// The call was already canceled.
     /// </summary>
-    public static HResult RPC_E_CALL_CANCELED => new(0x80010002);
+    public static HResult RPC_E_CALL_CANCELED => new(0x80010002u);
 
     /// <summary>
     /// The call was completed during the timeout interval.
     /// </summary>
-    public static HResult RPC_E_CALL_COMPLETE => new(0x80010117);
+    public static HResult RPC_E_CALL_COMPLETE => new(0x80010117u);
 
     /// <summary>
     /// Call cancellation is not enabled on the specified thread.
     /// </summary>
-    public static HResult CO_E_CANCEL_DISABLED => new(0x80010140);
+    public static HResult CO_E_CANCEL_DISABLED => new(0x80010140u);
 }

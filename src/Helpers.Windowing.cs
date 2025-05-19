@@ -3,16 +3,19 @@ using Sibber.Common.Native.Windows.Windowing;
 
 namespace Sibber.Common.Native.Windows;
 
-public static partial class Helpers
+/// <content>
+/// <see cref="Helpers.Windowing"/>
+/// </content>
+partial class Helpers
 {
     public static class Windowing
     {
         /// <summary>
-        /// Run a message loop.
+        /// Run a simple standard message loop.
         /// </summary>
         /// <param name="throwOnError">Specifies whether the method should throw if there is an error, or return <c>-1</c>.</param>
         /// <returns>
-        /// <c>0</c> if <see cref="WindowMessage.Quit"/> is retrieved.
+        /// <c>0</c> if <see cref="WindowMessage.Quit"/> is retrieved.<br/>
         /// <c>-1</c> if <paramref name="throwOnError"/> is <see langword="false"/> and there was an error during/after message retrieval.
         /// </returns>
         /// <exception cref="Win32Exception">
@@ -20,7 +23,7 @@ public static partial class Helpers
         /// </exception>
         public static unsafe int RunMessageLoop(bool throwOnError = false)
         {
-            MSG msg = new();
+            Msg msg = new();
             int ret;
             while (true)
             {
@@ -30,7 +33,7 @@ public static partial class Helpers
                 if (ret == -1)
                 {
                     if (throwOnError) throw new Win32Exception();
-                    else break;
+                    break;
                 }
 
                 PInvoke.Windowing.TranslateMessage(&msg);
