@@ -2,6 +2,9 @@
 
 namespace Sibber.Common.Native.Windows.Input;
 
+/// <summary>
+/// Virtual-Key codes.
+/// </summary>
 /// <remarks>
 /// <code>
 /// +-----------------------+--------------+

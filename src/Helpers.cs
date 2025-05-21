@@ -3,6 +3,9 @@ using System.Runtime.CompilerServices;
 
 namespace Sibber.Common.Native.Windows;
 
+/// <summary>
+/// Provides helpers for various windows API features and functions.
+/// </summary>
 public static partial class Helpers
 {
 #if NET7_0_OR_GREATER

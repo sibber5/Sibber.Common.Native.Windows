@@ -8,7 +8,7 @@ namespace Sibber.Common.Native.Windows.Windowing;
 
 // TODO: add docs
 /// <summary>
-/// Window Messages
+/// Window messages.
 /// </summary>
 /// <remarks>
 /// Generated from WinUser.h from Windows SDK 10.0.26100.0.<br/>
@@ -668,19 +668,23 @@ public enum WindowMessage : uint
     PenWinLast = 0x038F,
 
     /// <summary>
-    /// <para>Used to define private messages for use by private window classes, usually of the form <see cref="User"/>+x, where x is an integer value.</para>
-    /// <para>See <see href="https://learn.microsoft.com/en-us/windows/win32/winmsg/wm-user">documentation on learn.microsoft.com</see> for more information.</para>
+    /// Used to define private messages for use by private window classes, usually of the form <c><see cref="User"/> + x</c>, where <c>x</c> is an integer value.
     /// </summary>
+    /// <remarks>
+    /// <see href="https://learn.microsoft.com/en-us/windows/win32/winmsg/wm-user">Read more on learn.microsoft.com</see>.
+    /// </remarks>
     User = 0x0400,
 
     /// <summary>
-    /// <para>Used to define private messages, usually of the form <see cref="App"/>+x, where x is an integer value.</para>
-    /// <para>See <see href="https://learn.microsoft.com/en-us/windows/win32/winmsg/wm-app">documentation on learn.microsoft.com</see> for more information.</para>
+    /// Used to define private messages, usually of the form <c><see cref="App"/> + x</c>, where <c>x</c> is an integer value.
     /// </summary>
+    /// <remarks>
+    /// <see href="https://learn.microsoft.com/en-us/windows/win32/winmsg/wm-app">Read more on learn.microsoft.com</see>.
+    /// </remarks>
     App = 0x8000,
 
     /// <summary>
     /// [UNDOCUMENTED] WM_SYSTIMER is used for internal actions like caret blinking or scrolling.
     /// </summary>
-    SysTimer = 0x118,
+    SysTimer = 0x0118,
 }

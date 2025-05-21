@@ -7,6 +7,9 @@ namespace Sibber.Common.Native.Windows;
 
 #pragma warning disable CA1823 // Avoid unused private fields
 
+/// <summary>
+/// Represents a window result handle (HRESULT).
+/// </summary>
 [DebuggerDisplay("{Value}")]
 public readonly partial struct HResult(uint value) : IEquatable<HResult>, IFormattable
 {

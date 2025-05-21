@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace Sibber.Common.Native.Windows;
 
-/// <summary>The <a href="https://learn.microsoft.com/windows/win32/api/windef/ns-windef-point">POINT</a> structure defines the <i>x</i>- and <i>y</i>-coordinates of a point.</summary>
+/// <summary>The <a href="https://learn.microsoft.com/windows/win32/api/windef/ns-windef-point">POINT</a> structure which defines the <i>x</i>- and <i>y</i>-coordinates of a point.</summary>
 /// <remarks>
 /// <para>The <a href="https://learn.microsoft.com/windows/win32/api/windef/ns-windef-point">POINT</a> structure is identical to the <a href="https://docs.microsoft.com/windows/desktop/api/windef/ns-windef-pointl">POINTL</a> structure.</para>
 /// <para><see href="https://docs.microsoft.com/windows/desktop/api/windef/ns-windef-point">Read more on docs.microsoft.com</see>.</para>

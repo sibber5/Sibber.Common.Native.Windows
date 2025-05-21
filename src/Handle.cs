@@ -4,6 +4,9 @@ using System.Globalization;
 
 namespace Sibber.Common.Native.Windows;
 
+/// <summary>
+/// Represents a native handle.
+/// </summary>
 [DebuggerDisplay("{Value}")]
 public readonly struct Handle(IntPtr value) : IEquatable<Handle>, IFormattable
 {

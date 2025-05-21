@@ -6,6 +6,9 @@ namespace Sibber.Common.Native.Windows.Windowing;
 /// <summary>
 /// Queue status flags for <see href="https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-getqueuestatus">GetQueueStatus</see> and <see href="https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-msgwaitformultipleobjects">MsgWaitForMultipleObjects</see>.
 /// </summary>
+/// <remarks>
+/// Generated from WinUser.h from Windows SDK 10.0.26100.0.
+/// </remarks>
 [Flags]
 public enum QueueStatus : uint
 {

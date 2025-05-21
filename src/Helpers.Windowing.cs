@@ -8,6 +8,9 @@ namespace Sibber.Common.Native.Windows;
 /// </content>
 partial class Helpers
 {
+    /// <summary>
+    /// Provides helpers for windows API features and functions related to windowing.
+    /// </summary>
     public static class Windowing
     {
         /// <summary>
