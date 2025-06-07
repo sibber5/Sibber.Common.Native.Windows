@@ -9,11 +9,11 @@ namespace Sibber.Common.Native.Windows;
 public static partial class Helpers
 {
 #if NET7_0_OR_GREATER
-    [Obsolete("Call the overload that takes 'byte' to avoid unintentionally unsafely passing out of range values.", false)]
+    [Obsolete("Call the overload that takes 'byte' to avoid unintentionally passing out of range values.", false)]
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static ushort MakeWord(nuint low, nuint high) => unchecked((ushort)(((byte)(low & 0xff)) | ((byte)(high & 0xff) << 8)));
 #else
-    [Obsolete("Call the overload that takes 'byte' to avoid unintentionally unsafely passing out of range values.", false)]
+    [Obsolete("Call the overload that takes 'byte' to avoid unintentionally passing out of range values.", false)]
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static ushort MakeWord(UIntPtr low, UIntPtr high) => Environment.Is64BitProcess ? MakeWord((ulong)low, (ulong)high) : MakeWord((uint)low, (uint)high);
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -25,11 +25,11 @@ public static partial class Helpers
     public static ushort MakeWord(byte low, byte high) => unchecked((ushort)(low | (high << 8)));
 
 #if NET7_0_OR_GREATER
-    [Obsolete("Call the overload that takes 'ushort' to avoid unintentionally unsafely passing out of range values.", false)]
+    [Obsolete("Call the overload that takes 'ushort' to avoid unintentionally passing out of range values.", false)]
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static int MakeLong(nuint low, nuint high) => unchecked((int)(((ushort)(low & 0xffff)) | (((uint)(ushort)(high & 0xffff)) << 16)));
 #else
-    [Obsolete("Call the overload that takes 'ushort' to avoid unintentionally unsafely passing out of range values.", false)]
+    [Obsolete("Call the overload that takes 'ushort' to avoid unintentionally passing out of range values.", false)]
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static int MakeLong(UIntPtr low, UIntPtr high) => Environment.Is64BitProcess ? MakeLong((ulong)low, (ulong)high) : MakeLong((uint)low, (uint)high);
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -41,11 +41,11 @@ public static partial class Helpers
     public static int MakeLong(ushort low, ushort high) => unchecked((int)(low | (((uint)high) << 16)));
 
 #if NET7_0_OR_GREATER
-    [Obsolete("Call the overload that takes 'ushort' to avoid unintentionally unsafely passing out of range values.", false)]
+    [Obsolete("Call the overload that takes 'ushort' to avoid unintentionally passing out of range values.", false)]
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static uint MakeDWord(nuint low, nuint high) => unchecked(((ushort)(low & 0xffff)) | (((uint)(ushort)(high & 0xffff)) << 16));
 #else
-    [Obsolete("Call the overload that takes 'ushort' to avoid unintentionally unsafely passing out of range values.", false)]
+    [Obsolete("Call the overload that takes 'ushort' to avoid unintentionally passing out of range values.", false)]
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static uint MakeDWord(UIntPtr low, UIntPtr high) => Environment.Is64BitProcess ? MakeDWord((ulong)low, (ulong)high) : MakeDWord((uint)low, (uint)high);
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
