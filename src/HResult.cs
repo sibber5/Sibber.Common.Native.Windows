@@ -8,8 +8,12 @@ namespace Sibber.Common.Native.Windows;
 #pragma warning disable CA1823 // Avoid unused private fields
 
 /// <summary>
-/// Represents a window result handle (HRESULT).
+/// Represents a result handle (HRESULT).
 /// </summary>
+/// <remarks>
+/// HRESULT is actually not a handle (see <see href="https://devblogs.microsoft.com/oldnewthing/20180117-00/?p=97815">Why does HRESULT begin with H when it's not a handle to anything?</see>); it's just a value with several fields encoded into it.
+/// </remarks>
+/// <seealso href="https://learn.microsoft.com/en-us/windows/win32/com/error-handling-in-com"/>
 [DebuggerDisplay("{Value}")]
 public readonly partial struct HResult(uint value) : IEquatable<HResult>, IFormattable
 {

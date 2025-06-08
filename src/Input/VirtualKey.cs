@@ -6,29 +6,49 @@ namespace Sibber.Common.Native.Windows.Input;
 /// Virtual-Key codes.
 /// </summary>
 /// <remarks>
-/// <code>
-/// +-----------------------+--------------+
-/// | 0x07, 0x0A-0x0B       | Reserved     |
-/// +-----------------------+--------------+
-/// | 0x0E - 0x0F           | Unassigned   |
-/// +-----------------------+--------------+
-/// | 0x3A - 0x40           | Undefined    |
-/// +-----------------------+--------------+
-/// | 0x5E, 0x88-0x8F       | Reserved     |
-/// +-----------------------+--------------+
-/// | 0x92 - 0x96           | OEM specific |
-/// +-----------------------+--------------+
-/// | 0x97 - 0x9F           | Unassigned   |
-/// +-----------------------+--------------+
-/// | 0xE0                  | Reserved     |
-/// +-----------------------+--------------+
-/// | 0xE1, 0xE3-0xE4, 0xE6 | OEM specific |
-/// +-----------------------+--------------+
-/// | 0xE8                  | Unassigned   |
-/// +-----------------------+--------------+
-/// | 0xE9-0xF5             | OEM specific |
-/// +-----------------------+--------------+
-/// </code>
+/// <list type="table">
+///     <item>
+///         <term><c>0x07, 0x0A-0x0B</c></term>
+///         <description>Reserved</description>
+///     </item>
+///     <item>
+///         <term><c>0x0E - 0x0F</c></term>
+///         <description>Unassigned</description>
+///     </item>
+///     <item>
+///         <term><c>0x3A - 0x40</c></term>
+///         <description>Undefined</description>
+///     </item>
+///     <item>
+///         <term><c>0x5E, 0x88-0x8F</c></term>
+///         <description>Reserved</description>
+///     </item>
+///     <item>
+///         <term><c>0x92 - 0x96</c></term>
+///         <description>OEM specific</description>
+///     </item>
+///     <item>
+///         <term><c>0x97 - 0x9F</c></term>
+///         <description>Unassigned</description>
+///     </item>
+///     <item>
+///         <term><c>0xE0</c></term>
+///         <description>Reserved</description>
+///     </item>
+///     <item>
+///         <term><c>0xE1, 0xE3-0xE4, 0xE6</c></term>
+///         <description>OEM specific</description>
+///     </item>
+///     <item>
+///         <term><c>0xE8</c></term>
+///         <description>Unassigned</description>
+///     </item>
+///     <item>
+///         <term><c>0xE9-0xF5</c></term>
+///         <description>OEM specific</description>
+///     </item>
+/// </list>
+/// <para>Generated from WinUser.h from Windows SDK 10.0.26100.0.</para>
 /// </remarks>
 public enum VirtualKey : ushort
 {
