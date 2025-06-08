@@ -1,4 +1,9 @@
-﻿namespace Sibber.Common.Native.Windows;
+﻿// SPDX-License-Identifier: MIT
+// Copyright (c) .NET Foundation and Contributors
+// Copyright (c) 2025 sibber (GitHub: sibber5)
+// Modified version of https://github.com/dotnet/pinvoke/blob/d974353ca67c4b8e6009096bd3ab7e6f284ed11d/src/Windows.Core/HResult.cs
+
+namespace Sibber.Common.Native.Windows;
 
 #pragma warning disable CA1707 // Identifiers should not contain underscores
 partial struct HResult

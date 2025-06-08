@@ -1,8 +1,8 @@
-﻿namespace Sibber.Common.Native.Windows;
-
-// Copyright © .NET Foundation and Contributors. All rights reserved.
-// Licensed under the MIT license. SPDX-License-Identifier: MIT.
+﻿// SPDX-License-Identifier: MIT
+// Copyright (c) .NET Foundation and Contributors
 // From https://github.com/dotnet/pinvoke/blob/d974353ca67c4b8e6009096bd3ab7e6f284ed11d/src/Windows.Core/HResult%2BSeverityCode.cs
+
+namespace Sibber.Common.Native.Windows;
 
 /// <content>
 /// The <see cref="SeverityCode"/> nested type.

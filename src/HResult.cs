@@ -1,4 +1,9 @@
-﻿using System;
+﻿// SPDX-License-Identifier: MIT
+// Copyright (c) .NET Foundation and Contributors
+// Copyright (c) 2025 sibber (GitHub: sibber5)
+// Modified version of HResult.cs from https://github.com/dotnet/pinvoke, see below for more details.
+
+using System;
 using System.Diagnostics;
 using System.Globalization;
 using System.Runtime.InteropServices;

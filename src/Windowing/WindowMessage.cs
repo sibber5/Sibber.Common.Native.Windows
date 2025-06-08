@@ -1,4 +1,7 @@
-﻿using System;
+﻿// SPDX-License-Identifier: MIT
+// Copyright (c) 2025 sibber (GitHub: sibber5)
+
+using System;
 using System.Runtime.Versioning;
 
 namespace Sibber.Common.Native.Windows.Windowing;
@@ -11,9 +14,8 @@ namespace Sibber.Common.Native.Windows.Windowing;
 /// Window messages.
 /// </summary>
 /// <remarks>
-/// Generated from WinUser.h from Windows SDK 10.0.26100.0.<br/>
-/// <br/>
-/// All Message Numbers below <c>0x0400</c> are RESERVED.
+/// <para>All Message Numbers below <c>0x0400</c> are RESERVED.</para>
+/// <para>Generated from WinUser.h from Windows SDK 10.0.26100.0.</para>
 /// </remarks>
 public enum WindowMessage : uint
 {

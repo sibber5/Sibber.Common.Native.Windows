@@ -1,4 +1,7 @@
-﻿using System;
+﻿// SPDX-License-Identifier: MIT
+// Copyright (c) 2025 sibber (GitHub: sibber5)
+
+using System;
 using System.Runtime.CompilerServices;
 
 namespace Sibber.Common.Native.Windows;
