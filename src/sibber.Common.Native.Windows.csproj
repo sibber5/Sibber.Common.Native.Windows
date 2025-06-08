@@ -19,7 +19,7 @@
     <Description>Small library that provides common windows native APIs and types that are used by my other windows API libraries.</Description>
     <Copyright>Copyright (c) 2025 sibber (GitHub: sibber5)</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/sibber5/Sibber.Common.Native.Windows</PackageProjectUrl>
+    <PackageProjectUrl>https://sibber5.github.io/Sibber.Common.Native.Windows</PackageProjectUrl>
     <RepositoryUrl>https://github.com/sibber5/Sibber.Common.Native.Windows</RepositoryUrl>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
